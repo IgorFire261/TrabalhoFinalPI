@@ -1,0 +1,646 @@
+/*Corpo do código*/
+body {
+    background-color: rgb(40, 40, 41);
+    font-family: 'Poppins',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    .texto {
+        margin: 20px;
+        text-align: center;
+        margin-left: 30px;
+        position: relative;
+    }
+}
+
+h3{
+    color:#dad733;
+}
+p {
+    color: #fff;
+}
+
+/*Header*/
+header {
+    width: 100%;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 8px 5.5%;
+    z-index: 10;
+}
+
+.navbar {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.navbar :hover {
+    position: static;
+    font-weight: 650;
+    color: #0cdd2f;
+    margin: 0px;
+    transition: .3s;
+}
+
+.navbar>a {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 30px;
+    text-decoration: none;
+    font-size: calc((var(--site-navigation-font-font-size-value) - 1) * 1.2vw + 1rem);
+}
+
+.logo {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#insc {
+    border: #0cdd2f solid 5px;
+    border-radius: 10px;
+}
+
+/*Footer*/
+
+.container {
+    width: 1380px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.agradecimento {
+    width: 25%;
+    float: left;
+}
+
+footer .link {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+footer .link:hover {
+    position: relative;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #000000;
+    height: 450px;
+    width: 100%;
+    position: static;
+    bottom: 0;
+    margin-top: 10px;
+    margin: 0%;
+
+    p {
+        color: rgba(255, 255, 255, 0.5);
+        font-family: 'Poppins', sans-serif;
+        width: 300px;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+#cp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    float:center;
+ }
+
+ h5 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nomeLogo {
+    box-sizing: border-box;
+    margin: top 10px;
+    padding: 0;
+    color: #dad733;
+}
+
+/*Conteúdo da HOME*/
+#homep {
+    text-shadow: 1px 5px 10px #0cdd2f;
+    color: #0cdd2f;
+}
+
+h1 {
+    color: #0cdd2f;
+    text-shadow: 1px 5px 10px #000000;
+}
+
+#sobre>p {
+    color: #fff;
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#sobre img {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#video {
+    align-items: center;
+    text-align: center;
+}
+
+.atracao{
+    width: 99.5%;
+    color: white;
+    background-color: black;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.data {
+    background-color: #dad733;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        color: #000000;
+        text-align: center;
+        text-shadow: none;
+    }
+}
+
+
+/*Local*/
+h2 {
+    color: #dad733;
+}
+.infolocal {
+    margin: auto;
+    box-sizing: border-box;
+    text-align: justify;
+    padding: 15px;
+    background-image: linear-gradient(to right, black, transparent 10%, green);
+}
+
+.infolocal ::before {
+    filter: blur(10px);
+}
+
+.imagenslocal {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Item {
+    align-items: center;
+    border: solid 2px #000000;
+    border-radius: 10px;
+
+    img {
+        border-radius: 10px;
+        display: block;
+    }
+
+    iframe {
+        border-radius: 10px;
+        display: block;
+    }
+}
+
+.Item :hover {
+    image-rendering: optimizeQuality;
+    box-shadow: #000000;
+}
+
+.Item img:hover {
+    filter: grayscale(1) blur(1px);
+    transition: all 2s;
+}
+
+.linha2 {
+    position: relative;
+    overflow: hidden;
+    padding: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.imagenslocal h1 {
+    padding: 100px;
+    position: relative;
+    z-index: 1;
+    
+}
+
+/*Inscrição*/
+.imagemfundo {
+    position: relative;
+    padding: 1em;
+}
+
+.imagemfundo::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+
+    content: "";
+
+    background-image: url(https://expocenternorte.com.br/wp-content/uploads/sites/4/2021/05/1-Vista%20A%C3%A9rea%20Complexo%20e%20Est-min-scaled.jpg);
+    filter: opacity(0.2);
+}
+.txt {
+    position: relative;
+    color: white;
+    h1{
+        padding: 50px;
+    }
+}
+
+.inscricao-texto {
+    padding: 2em;
+}
+
+.imagemfundoinscricao {
+    position: relative;
+    padding: 1px;
+
+    h1 {
+        padding: 10px;
+    }
+}
+
+.imagemfundoinscricao::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+    content: "";
+
+
+    background-image: url("./imagens/evento.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: opacity(0.3);
+}
+
+.caixa {
+    margin: auto;
+    box-sizing: border-box;
+    background-color: #5a5656;
+    padding: 50px;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(to right, #000000, #424242);
+    
+    legend {
+        color: #dad733;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    #formula label {
+        position: absolute;
+        left: 19px;
+        margin-right: 5px;
+    }
+
+    #dados {
+        position: relative;
+        width: 225px;
+    }
+
+    #num, #comp {
+        width: 50px;
+    }
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #424242;
+  } 
+
+.boxform {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color:rgb(40, 40, 41);
+    max-width: 500px;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 2px 5px 5px rgb(73, 223, 80);
+    p {
+        color: rgba(255, 255, 255, 0.5);
+    }
+ 
+}
+#endereco{
+    gap: 10px;
+}
+.boxform div {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+input:focus{
+    border: 3px solid gray;
+    outline: none;
+}
+
+#dados{
+    width: 100%;
+    padding: 0.4rem;
+    margin: 0.5rem 0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    
+}
+.checkbox{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.checkbox > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+}
+.checkbox > div > label {
+    flex-grow: 1;
+}
+#termoConteiner{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#termoConteiner >div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+#termoConteiner > div > label{
+    flex-grow: 1;
+}
+
+div > #dados{
+    margin-top: 10px;
+}
+
+
+/*Programação*/
+#prog {
+    align-items: center;
+    text-align: center;
+}
+.tabela {
+    padding: 20px;
+    border-collapse: collapse;
+}
+.linha {
+    background-color: #0e7a04;
+    color: #0cdd2f;
+    text-transform: uppercase;
+    text-decoration: solid;
+    padding: 30px;
+}
+td {
+    color: #fff;
+    background-color: #000000;
+    text-shadow: 1px 5px 10px #000000;
+    padding: 20px;
+}
+
+table {
+    text-align: center;
+    background-color: #0cdd2f;
+    border-radius: 1px;
+    padding: 2px;
+}
+
+table {
+    margin: auto;
+}
+
+/*Submissão*/
+
+.caixa2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+
+#sub{
+    border: solid 5px #0cdd2f;
+    border-radius: 20px;
+    padding: 1%;
+    width: 50%;
+    text-align: center;
+}
+
+#sub > h1 > p{
+    text-align: justify;
+}
+
+#gif{
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#termosdeuso {
+    display: run-in;
+    margin: 20px;
+}
+
+.botao{
+
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: rgb(60, 60, 61);
+    width: 80px;
+    height: 30px;
+    padding: 0%;
+    a {
+        text-decoration: none;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        
+    }
+}
+.botao:hover{
+    background-color: white;
+    color: rgb(60, 60, 61);
+    a{
+        background-color: white;
+        color: rgb(60, 60, 61);
+    }
+}
+
+/*Colaboradores*/
+#title{
+    padding: 10px;
+  }
+  .colab{ 
+    background-color: rgb(0, 0, 0);
+      padding: 2px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+      justify-content: space-evenly;
+  
+   }
+   .item {
+    background-color: #1f1e1e;
+    border: solid 2px black;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.item>p {
+    text-align: center;
+}
+
+
+.item2 {
+    background-color: #5a5656;
+    border: solid 2px black;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.imgpales{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+/*Responsividade*/
+
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: static;
+        text-align: center;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    #video{
+        display: none;
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 650px;
+
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container img{
+        display: none; 
+    }
+    
+    #linha{
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    td, tr,th{
+        padding: 5px;
+        text-align: center;
+    }
+    #homeimg{
+    width: 80%;
+    height: 80%;
+    }
+    table{
+        margin: 0;
+        padding: 0;
+        align-self: center;
+        width: 100%;
+    }
+    .local{
+        display: none;
+    }
+    .caixa{
+        background: none;
+    }
+    .colab{
+        flex-direction: column;
+    }
+    #gif img{
+        width: 70%;
+    }
+    p{
+        font-family: 'Poppins';
+    }
+    
+  }

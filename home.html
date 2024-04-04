@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pac-Man</title>
 </head>
+
 <body>
     <header>
-        <a class="logo" href="home.html" >
-            <img src="assets/pacman.png" alt="logo" width="100" height="100"></a>
+        <div class="inicio">
+            <a class="logo" href="home.html">
+                <img src="assets/pacman.png" alt="logo" width="100" height="100"><span>Pac-Man</span></a>
+            <h1 id="dsc">Pac-Man</h1>
+        </div>
         <nav class="navbar">
             <a href="home.html" id="homep">HOME</a>
             <a href="index.html">Jogo</a>
@@ -17,38 +22,64 @@
         </nav>
     </header>
     <main>
-        <p>Pac-Man e um classico jogo de arcade lançado pela primeira vez em 1980 pela empresa japonesa Namco. Nele, os jogadores controlam um personagem redondo e amarelo chamado Pac-Man, que deve percorrer um labirinto comendo pontos enquanto foge de quatro fantasmas coloridos.</p>
+        <div id="objetivo">
+            <h2>Objetivo:</h2>
+            <p>Pac-Man e um classico jogo de arcade lançado pela primeira vez em 1980 pela empresa japonesa Namco. Nele,
+                os
+                jogadores controlam um personagem redondo e amarelo chamado Pac-Man, que deve percorrer um labirinto
+                comendo
+                pontos enquanto foge de quatro fantasmas coloridos.</p>
+        </div>
+        <h2 id="img">Imagens do jogo:</h2>
+        <div class="imagens">
+            <img src="assets/game.png" alt="pacmangame" width="400" height="400">
+            <img src="assets/power.png" alt="Pacman comendo poderxinho" width="400" height="400">
+            <img src="assets/lvl2.png" alt="Tela do level 2" width="400" height="400">
+        </div>
+        <div class="regras">
+            <h2>Regras do jogo:</h2>
+            <p>O objetivo do jogador e alcancar uma pontuacao de 274 pontos para vencer o jogo. Cada pac-dot verde no
+                mapa concede 1 ponto ao jogador. Os pontos de poder valem 10 pontos cada, e quando consumidos, induzem
+                todos os fantasmas ao estado de temor, permitindo que o jogador os devore tambem. Caso isso ocorra
+                enquanto o jogador esta em contato com um fantasma, ele recebera um acrescimo de 50 pontos em sua
+                pontuacao. Entretanto, se o jogador colidir com um fantasma que nao esteja no estado de temor, resultara
+                na derrota imediata no jogo.
+            </p>
+        </div>
         <div class="start-screen">
-            <h1>Bem-Vindo ao Pac-Man</h1>
+            <h1>Clique aqui para jogar PAC-MAN</h1>
             <form action="index.html">
-            <button id="start-button" type="submit" >Play</button>
-        </form>
+                <button id="start-button" type="submit">Play</button>
+            </form>
         </div>
     </main>
     <footer>
         <div class="container">
             <div class="agradecimento">
-                <h1 class="nomeLogo">HACKSEC</h1>
-                <p>Aprenda com os melhores e fortaleça seu conhecimento com projetos que mudam o mundo. Reserve seu
-                    lugar agora e proteja seu futuro digital! </p>
+                <h5 class="nomeLogo">Equipe</h5>
+                <a href="home.html"><img src="assets/duda.jpg" alt="Duda" width="50" height="50" id="equipe"></a>
+                <a href="home.html"><img src="assets/ingao.jpg" alt="Duda" width="50" height="50" id="equipe"></a>
             </div>
             <div class="agradecimento">
-                <h5>Endereço</h5>
-                <p><i class="end"></i>Rua José Bernardo Pinto, 333 - Vila Guilherme, São Paulo, SP; Brasil</p>
+                <h5>Contato</h5>
+                <a href="home.html"><img src="assets/zap.png" alt="zap" width="50" height="50"></a>
+                <a href="home.html"><img src="assets/face.png" alt="Facebook" width="50" height="50"></a>
+                <a href="home.html"><img src="assets/insta.png" alt="Instagram" width="50" height="50"></a>
+                
             </div>
             <div class="agradecimento">
-                <h5>Links Rápidos</h5>
+                <h5>Links Rapidos</h5>
                 <a class="link" href="home.html">Home</a>
-                <a class="link" href="programacao.html">Programação</a>
-                <a class="link" href="local.html">Local</a>
-                <a class="link" href="colab.html">Colaboradores</a>
-                <a class="link" href="inscricao.html">Inscrição</a>
+                <a class="link" href="index.html">Jogo</a>
+                <a class="link" href="formulario.html">Formulario</a>
             </div>
             <div>
                 <img src="assets/pacman.png" alt="logo do evento" width="250" height="250">
             </div>
         </div>
-        
+
     </footer>
+    <script src="home.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HACKSEC</title>
+    <link rel="shortcut icon" type="imagex/png" href="imagens/logoEvento.ico">
+</head>
+
+<body class="formulario">
+
+    <header>
+        <a class="logo" href="home.html">
+            <img src="imagens/logoEvento.png" alt="logo do evento" width="100" height="100"></a>
+        <nav class="navbar">
+            <a href="home.html">HOME</a>
+            <a href="programacao.html ">Programação</a>
+            <a href="local.html">Local</a>
+            <a href="colab.html">Colaboradores</a>
+            <a href="inscricao.html" id="insc" target="_blank">Inscreva-se</a>
+        </nav>
+    </header>
+
+    <div class="txt">
+        <div class="inscricao-texto imagemfundoinscricao">
+            <div>
+                <h1>INSCREVA-SE</h1>
+                <ul>
+                    <li>
+                        <p>Garanta seu acesso <b>PRESENCIAL</b> ao maior festival Hacker do Brasil!</p>
+                    </li>
+
+                    <li>
+                        <p>Assista a diversas palestras, oficinas e shows!</p>
+                    </li>
+                    <li>
+                        <p>Um dia inteiro dedicado à cultura Hacker!</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="">
+        <form class="caixa" action="submissao.html" method="get">
+            <div class="boxform">
+                <h1>FAÇA SUA INSCRIÇÃO</h1>
+                <p><i>Os campos com <font color="red">*</font> são obrigatórios </i></p>
+                <div>
+                    <label for="a"><i>Nome Completo <font color="red">*</font></i></label>
+                    <input type="text" class="dados" id="a" name="nome" autofocus required>
+                </div>
+                <div>
+                    <label for="b"><i>Data de Nascimento</i></label>
+                    <input type="date" class="dados" id="b" name="nome">
+                </div>
+                <div>
+                    <label for="c"><i>CPF</i> <font color="red">*</font></label>
+                    <input type="text" id="c" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" class="dados" name="cpf" maxlength="14"
+                        placeholder="Formato:xxx.xxx.xxx-xx" required>
+                </div>
+                <div>
+                    <label for="d"><i>Telefone</i> <font color="red">*</font></label>
+                    <input type="tel" id="d" pattern="(\d{2}\)\d{5}\-\d{4}\" class="dados" name="fone"
+                        placeholder="Formato:(xx)xxxxx-xxxx" required>
+                </div>
+                <div>
+                    <label for="e"><i>Email</i> <font color="red">*</font></label>
+                    <input type="email" id="e" class="dados" name="email" required>
+                </div>
+                <div id="endereco">
+                    <p><i>Endereço</i></p>
+                    <label for="dados1">Rua<font color="red">*</font></label>
+                    <input type="text" id="dados1" name="end" required>
+                    <label for="dados2">Número <font color="red">*</font></label>
+                    <input type="number" id="dados2" name="end" required>
+                    <label for="dados3">Complemento</label>
+                    <input type="text" id="dados3" name="end">
+                <div>
+                        <label>Estado <font color="red">*</font></label>
+                            
+                            <select name="end" required>
+                                <option value="">Selecione</option>
+                                <option value="ac">Acre</option>
+                                <option value="al">Alagoas</option>
+                                <option value="ap">Amapá</option>
+                                <option value="am">Amazonas</option>
+                                <option value="ba">Bahia</option>
+                                <option value="ce">Ceará</option>
+                                <option value="df">Distrito Federal</option>
+                                <option value="es">Espírito Santo</option>
+                                <option value="go">Goiás</option>
+                                <option value="ma">Maranhão</option>
+                                <option value="mt">Mato Grosso</option>
+                                <option value="ms">Mato Grosso do Sul</option>
+                                <option value="mg">Minas Gerais</option>
+                                <option value="pa">Pará</option>
+                                <option value="pb">Paraíba</option>
+                                <option value="pr">Paraná</option>
+                                <option value="pe">Pernambuco</option>
+                                <option value="pi">Piauí</option>
+                                <option value="rj">Rio de Janeiro</option>
+                                <option value="rn">Rio Grande do Norte</option>
+                                <option value="rs">Rio Grande do Sul</option>
+                                <option value="ro">Roraima</option>
+                                <option value="rr">Rondônia</option>
+                                <option value="sc">Santa Catarina</option>
+                                <option value="sp">São Paulo</option>
+                                <option value="se">Sergipe</option>
+                                <option value="to">Tocantins</option>        
+                        </select>
+                    </div>
+                </div>
+                <h3>
+                    Em qual(is) palestra(s) você tem interesse de participar?
+                </h3>
+                <div class="checkbox">                    
+                    <div>
+                        <input  type="checkbox" class="check" name="ataque" id="ataque" value="ataque">
+                        <label for="ataque">Ataque</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="check" name="defesa" id="defesa" value="defesa">
+                        <label for="defesa">Defesa</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="check" name="front" id="front" value="front">
+                        <label for="front">Front-End</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="check" name="back" id="back" value="back">
+                        <label for="back">Back-End</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="check" name="data" id="data" value="data">
+                        <label for="data">Data Science</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="check" name="cloud" id="cloud" value="cloud">
+                        <label for="cloud">Cloud</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="check" name="privacidade" id="privacidade" value="priv">
+                        <label for="privacidade">Privacidade</label>
+                    </div>
+                </div>
+                <div id="termoConteiner">
+                    <div>
+                        <input type="radio" id="radio" name="termos" value="sim" required>
+                        <label for="radio">Concordo com os <a href="termos.html">termos de uso e
+                            privacidade</a></label>
+                            
+                    </div>
+                    <div>
+                        <input type="radio" id="radio2" name="termos" value="nao">
+                        <label for="radio2">Não concordo</label>
+                       
+                    </div>
+                </div>
+                
+                <button class="botao">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="agradecimento">
+                <h1 class="nomeLogo">HACKSEC</h1>
+                <p>Aprenda com os melhores e fortaleça seu conhecimento com projetos que mudam o mundo. Reserve seu
+                    lugar agora e proteja seu futuro digital! </p>
+            </div>
+            <div class="agradecimento">
+                <h5>Endereço</h5>
+                <p><i class="end"></i>Rua José Bernardo Pinto, 333 - Vila Guilherme, São Paulo, SP; Brasil</p>
+            </div>
+            <div class="agradecimento">
+                <h5>Links Rápidos</h5>
+                <a class="link" href="home.html">Home</a>
+                <a class="link" href="programacao.html">Programação</a>
+                <a class="link" href="local.html">Local</a>
+                <a class="link" href="colab.html">Colaboradores</a>
+                <a class="link" href="inscricao.html">Inscrição</a>
+            </div>
+            <div>
+                <img src="imagens/logoEvento.png" alt="logo do evento" width="320" height="320">
+            </div>
+            <div id="cp">
+                <img src="imagens/copyright.png" alt="copyr" width="20" height="20">
+                <p>Todos os direitos reservados 2024</p>
+            </div>
+        </div>
+        
+    </footer>
+
+</body>
+
+</html>
