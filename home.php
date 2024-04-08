@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE php>
 <html lang="en">
 
 <head>
@@ -10,18 +10,9 @@
 </head>
 
 <body>
-    <header>
-        <div class="inicio">
-            <a class="logo" href="home.html">
-                <img src="assets/pacman.png" alt="logo" width="100" height="100"><span>Pac-Man</span></a>
-            <h1 id="dsc">Pac-Man</h1>
-        </div>
-        <nav class="navbar">
-            <a href="home.html" id="homep">HOME</a>
-            <a href="index.html">Jogo</a>
-            <a href="formulario.html">Cadastro</a>
-        </nav>
-    </header>
+    <?php
+        include("header.php");
+    ?>
     <main>
         <div id="objetivo">
             <h2>Objetivo:</h2>
@@ -54,38 +45,14 @@
         </div>
         <div class="start-screen">
             <h1>Clique aqui para jogar PAC-MAN</h1>
-            <form action="index.html">
+            <form action="index.php">
                 <button id="start-button" type="submit">Play</button>
             </form>
         </div>
     </main>
-    <footer>
-        <div class="container">
-            <div class="agradecimento">
-                <h5 class="nomeLogo">Equipe</h5>
-                <a href="home.html"><img src="assets/duda.jpg" alt="Duda" width="50" height="50" id="equipe"></a>
-                <a href="home.html"><img src="assets/ingao.jpg" alt="Duda" width="50" height="50" id="equipe"></a>
-            </div>
-            <div class="agradecimento">
-                <h5>Contato</h5>
-                <a href="home.html"><img src="assets/zap.png" alt="zap" width="50" height="50"></a>
-                <a href="home.html"><img src="assets/face.png" alt="Facebook" width="50" height="50"></a>
-                <a href="home.html"><img src="assets/insta.png" alt="Instagram" width="50" height="50"></a>
-                
-            </div>
-            <div class="agradecimento">
-                <h5>Links Rapidos</h5>
-                <a class="link" href="home.html">Home</a>
-                <a class="link" href="index.html">Jogo</a>
-                <a class="link" href="formulario.html">Formulario</a>
-            </div>
-            <div>
-                <img src="assets/pacman.png" alt="logo do evento" width="250" height="250">
-            </div>
-        </div>
-
-    </footer>
-    <script src="home.js"></script>
+    <?php
+        include("footer.php")
+    ?>
 </body>
 
-</html>
+</php>
