@@ -20,7 +20,7 @@
         include("header.php");
     ?>
     <main id="form-body">
-        <form class="form-container" action="home.php">
+        <form class="form-container" action="login.php" method="post">
             <div class="box-container">
                 <h2>Contato</h2>
                 <p>(*) Campo obrigatório</p>
