@@ -1,18 +1,46 @@
-<?php
-    if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['name']) && !empty($_POST['name'])){
+<!DOCTYPE  php>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agradecimento</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+    <?php
+    include('header.php');
+    ?>
+    <div class="dados">
+    <?php
+    require_once 'conexao.php';
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $nome = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $check = $_POST['check'];
+        $nota = $_POST['radio'];
 
-        require 'conexao.php';
-        require 'Usuario.class.php';
+        $sql = "INSERT INTO form (nome, email) VALUES (:nome, :email)";
 
-        $u = new Form();
-        
-        $login = addslashes($_POST['email']);
-        $name = addslashes($_POST['name']);
-        
-        $u->login($email,$name);
-    }else{
-        header("Location = 'formulario.php'");
+        $stmt = $pdo->prepare($sql);
+
+        try{
+            $stmt->execute(['nome' => $nome, 'email' => $email]);
+            echo "Dados inseridos com sucesso!" . "<br>";
+        }catch(PDOException $e){
+            die("ERRO: " . $e->getMessage());
+        }
     }
-
-
-?>
+    echo $nome . "<br>" . $email . "<br>" . $message  . "<br>" . $nota . "<br>";
+    foreach($check as $c){
+        echo $c . "<br>";
+    }
+    
+    ?>
+    </div>
+    <?php
+    include('footer.php');
+    ?>
+</body>
+</html>

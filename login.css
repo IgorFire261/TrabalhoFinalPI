@@ -1,0 +1,173 @@
+header {
+    width: 100%;
+    background-color: darkblue;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 8px 5.5%;
+    z-index: 10;
+    box-shadow: -10px 5px 30px 2px rgb(10, 10, 27);
+}
+
+body {
+    font-family: 'ArcadeClassic', sans-serif;
+    background-color: midnightblue;
+    margin: 0;
+    margin-bottom: auto;
+    word-spacing: 5px;
+
+}
+
+.dados{
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    border: 20px black;
+    margin: auto;
+}
+
+.navbar {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.navbar :hover {
+    position: static;
+    font-weight: 650;
+    color: yellow;
+    margin: 0px;
+    transition: .3s;
+}
+
+.navbar>a {
+    font-family: 'ArcadeClassic',sans-serif;
+    color: white;
+    padding: 30px;
+    text-decoration: none;
+    font-size:50px;
+}
+
+.container {
+    width: 1380px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.agradecimento {
+    width: 25%;
+    float: left;
+    display: flex;
+    display: table-row;
+    justify-content: space-evenly;
+}
+
+#equipe{
+    border: solid;
+    border-radius: 10em;
+}
+
+.ativa{
+    border: 0.1em solid black ;
+    border-radius: 0.3em;
+}
+
+footer .link {
+    position: fixed;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    font-family: 'ArcadeClassic', sans-serif;
+    color: white;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+footer .link:hover {
+    position: relative;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 10px;
+}
+
+footer {
+    background-color:darkblue;
+    width: 100%;
+    position: static;
+    margin: 0;
+    p {
+        color:white;
+        font-family: 'ArcadeClassic', sans-serif;
+        width: 300px;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+#cp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    float:center;
+ }
+
+ h5 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nomeLogo {
+    box-sizing: border-box;
+    margin: top 10px;
+    padding: 0;
+    color: #dad733;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: yellow;
+    text-decoration: none;
+    text-shadow: black 0.2em 0.2em 0.2em;
+}
+
+.inicio{
+    color: #dad733;
+    display: flex;
+    align-items: center;
+}
+
+#dsc {
+    opacity: 0;
+    white-space: nowrap;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#dsc:hover {
+    animation: fadeIn 2s forwards;
+}

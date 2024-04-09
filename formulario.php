@@ -45,10 +45,10 @@
                 <div id="notas-container" class="input-container">
                     <div id="notas-container" class="input-container">
                         <p>Classifique sua experiencia com o jogo:</p>
-                        <div class="check-align"><input type="checkbox" name="facil" value="Facil, queria mais dificil" id="uma"><label for="uma">  Facil, queria mais dificil</label> <span id="radio-error"></span></div>
-                        <div class="check-align"><input type="checkbox" name="legalzin" value=" Foi legalzin" id="tres"><label for="tres"></label>  Foi legalzin<span id="radio-error"></span></div>
-                        <div class="check-align"><input type="checkbox" name="divertido" value=" Me diverti" id="duas"><label for="duas"></label>  Me diverti<span id="radio-error"></span></div>
-                        <div class="check-align"><input type="checkbox" name="esperando" value="Esperando pelo proximo!" id="quatro"><label for="quatro"></label>  Esperando pelo proximo!<span id="radio-error"></span></div>
+                        <div class="check-align"><input type="checkbox" name="check[]" value="Facil, queria mais dificil" id="uma"><label for="uma">  Facil, queria mais dificil</label> <span id="radio-error"></span></div>
+                        <div class="check-align"><input type="checkbox" name="check[]" value=" Foi legalzin" id="tres"><label for="tres"></label>  Foi legalzin<span id="radio-error"></span></div>
+                        <div class="check-align"><input type="checkbox" name="check[]" value=" Me diverti" id="duas"><label for="duas"></label>  Me diverti<span id="radio-error"></span></div>
+                        <div class="check-align"><input type="checkbox" name="check[]" value="Esperando pelo proximo!" id="quatro"><label for="quatro"></label>  Esperando pelo proximo!<span id="radio-error"></span></div>
                         <div id="nota-error" class="alert alert-warning" role="alert"
                             style="display: none; justify-content: space-between;"><button id="close-alert-button"
                                 type="button">X</button></div>
