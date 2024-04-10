@@ -49,6 +49,12 @@
                 <button id="start-button" type="submit">Play</button>
             </form>
         </div>
+        <div class="homeform">
+            <h2>Secao de comentarios</h2>
+            <form action="home.php" method="post">
+                
+            </form>
+        </div>
     </main>
     <?php
         include("footer.php")

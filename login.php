@@ -12,6 +12,7 @@
     include('header.php');
     ?>
     <div class="dados">
+        <h1>Muito obrigado pela contribuicao!</h1>
     <?php
     require_once 'conexao.php';
     if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -32,7 +33,8 @@
             die("ERRO: " . $e->getMessage());
         }
     }
-    echo $nome . "<br>" . $email . "<br>" . $message  . "<br>" . $nota . "<br>";
+    echo "Nome: " . $nome . "<br>" . "E-mail: ". $email . "<br>" ."Mensagem: " .  $message  . "<br>" . "Nota: ". $nota . "<br>";
+    echo "Experiencia sobre o jogo:" . "<br>";
     foreach($check as $c){
         echo $c . "<br>";
     }
