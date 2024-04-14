@@ -14,8 +14,4 @@
         echo "ERRO : ".$e->getMessage();
         exit;
     }
-
-
-    
-
 ?>

@@ -11,7 +11,7 @@
 
 <body>
     <?php
-        include("header.php");
+    include("header.php");
     ?>
     <main>
         <div id="objetivo">
@@ -51,14 +51,62 @@
         </div>
         <div class="homeform">
             <h2>Secao de comentarios</h2>
-            <form action="home.php" method="post">
-                
+            <form onsubmit="return validarFormulario()" method="post">
+                <div class="comentarios">
+                    <?php
+                        require_once 'conexao.php';
+                        $tentar = "SELECT * FROM comentario";
+                        try{
+                            $stmt = $pdo->prepare($tentar);
+                            $stmt->execute();
+
+                            $resultados = $stmt->fetchALL(PDO::FETCH_ASSOC);
+
+                            foreach($resultados as $row) {
+                                echo '<div>';
+                                echo '<p id="nomenome">' . $row['nome'] . '</p>';
+                                echo '<p>' . $row['mensagem'] . '</p>';
+                                echo '</div>';
+                            }
+                            
+
+                        }catch(PDOException $e){
+                            echo 'Erro na consulta' . $e->getMessage();
+                        }
+                    ?>
+                </div>
+                <h3>Deixe aqui seu comentario:</h3>
+                <div class="input-container">
+                    <label for="name">Nome</label>
+                    <input type="text" name="namehome" id="name2">
+                </div>
+                <div class="input-container">
+                    <label for="message">Tem alguma sugestao para nos?</label>
+                    <br>
+                    <textarea name="messagehome" id="message2" cols="30" rows="10" maxlength="2000"></textarea>
+                    <br>
+                </div>
+                <button type="submit" name="coment" class="btn btn-primary">Enviar</button>
             </form>
+            <?php
+            require_once 'conexao.php';
+            if(isset($_POST['coment'])){
+                $nome = filter_input(INPUT_POST,'namehome',FILTER_SANITIZE_SPECIAL_CHARS);
+                $comentario = filter_input(INPUT_POST,'messagehome',FILTER_SANITIZE_SPECIAL_CHARS);
+            
+                $bd = $pdo->prepare("INSERT INTO comentario(nome, mensagem) VALUES(:nome, :comentario)");
+                $bd->bindValue(':nome', $nome);
+                $bd->bindValue(':comentario', $comentario);
+                $bd->execute();
+        }
+
+            ?>
         </div>
     </main>
     <?php
-        include("footer.php")
+    include("footer.php")
     ?>
+    <script src="comentario.js"></script>
 </body>
 
 </php>

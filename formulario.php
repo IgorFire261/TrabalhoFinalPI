@@ -105,7 +105,7 @@
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Editar</button>
                                 <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Limpar</button>
-                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                <button type="submit" name="enviando" class="btn btn-primary">Enviar</button>
                             </div>
                         </div>
                     </div>

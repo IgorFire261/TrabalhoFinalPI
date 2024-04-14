@@ -427,6 +427,44 @@ input:focus {
     display: flex;
 }
 
+.homeform{
+    color: #fff;
+    padding: 10px;
+    border: solid 2px black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comentarios{
+    display:flex;
+    flex-direction: column;
+    background-color: midnightblue;
+    padding: 5px;
+}
+
+.comentarios > div{
+    border: solid 2px black;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#message2{
+    color: white;
+    background: transparent;
+    border: 1px solid #ccc;
+    position: relative;
+    padding: 10px;
+    z-index: 5;
+    height: 250px;
+    width: 250px;
+    font-family: 'ArcadeClassic';
+    font-size: 0.875em;
+}
+
+#nomenome{
+    color: #dad733;
+}
 
 
 @media only screen and (max-width: 768px) {
